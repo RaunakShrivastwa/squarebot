@@ -18,7 +18,6 @@ const verify = (role)=>{
     else{
         return res.status(403).json({Error:"Unautorized User"})
     }
-    req.id = decode.id
     
     }catch(err){
        return res.status(500).json({Error:err}) 
